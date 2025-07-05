@@ -1,8 +1,9 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  --myBlue: #25DAB5;
+  --myOrange: #FF8E59;
 }
 
 .logo {
@@ -41,27 +42,42 @@
   color: #888;
 }
 
-#sidebar {
-  @media (min-width: 750px) {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 10rem;
-    border: 1px red solid;
-    flex-shrink: 0;
-  }
+h1 {
+  color: var(--myBlue);
+  margin: 0;
+}
+
+h2 {
+  color: var(--myOrange);
+  margin: 0;
 }
 
 #screen {
-  border: 2px yellow dashed;
+  border: 1px yellow dashed;
   display: flex;
+  width: 100%; /* Take full available width */
   max-width: 1200px;
-  padding-left: 10rem;
-  position: relative;
+  min-width: 700px;
+  box-sizing: border-box;
+  margin: 0 auto; /* Center the container */
 }
 
-#content {
+#sidebar {
+  @media (min-width: 750px) {
+    position: sticky;
+    top: 0;
+    border: 1px red solid;
+    flex: 0 0 25rem; /* Fixed width, won't grow/shrink */
+    height: 100vh; /* Full viewport height */
+    padding-top: 3rem;
+    justify-items: start;
+    overflow-y: auto; /* Scroll if content is long */
+  }
+}
+
+main {
   border: 2px green solid;
-  flex-grow: 1;
+  flex: 1; /* Takes remaining space */
+  min-width: 0; /* Allows shrinking */
+  padding-top: 3rem;
 }
