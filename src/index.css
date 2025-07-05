@@ -28,6 +28,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #141414;
+}
+
+#screen {
+  min-height: 100vh;
+  max-width: 1200px;
 }
 
 h1 {
