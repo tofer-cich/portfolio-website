@@ -11,6 +11,7 @@ function App() {
       <div id="sidebar">
         <h1>Tofer Cich</h1>
         <h2>Full-Stack Engineer</h2>
+        <p>I build scalable, full-stack applications&#8212;designed with precision and intent.</p>
       </div>
       <main>
         <h1>Butt Stuff</h1>
