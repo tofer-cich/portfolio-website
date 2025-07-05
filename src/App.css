@@ -58,6 +58,25 @@ h2 {
   margin: 0;
 }
 
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:hover {
+  color: red;
+}
+
+li:hover::before {
+  content: '---';
+}
+
 #screen {
   border: 1px yellow dashed;
   display: flex;
