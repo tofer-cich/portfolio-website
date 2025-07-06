@@ -82,7 +82,6 @@ li:hover::before {
 }
 
 #screen {
-  border: 1px yellow dashed;
   display: flex;
   width: 100%; /* Take full available width */
   max-width: 1200px;
@@ -96,7 +95,6 @@ li:hover::before {
   @media (min-width: 750px) {
     position: sticky;
     top: 0;
-    border: 1px red solid;
     flex: 0 0 25rem; /* Fixed width, won't grow/shrink */
     height: 80vh; 
     padding-top: 5.5rem;
@@ -110,16 +108,23 @@ li:hover::before {
 }
 
 main {
-  border: 2px green solid;
+  display: flex;
+  flex-direction: column;
   flex: 1; /* Takes remaining space */
   min-width: 0; /* Allows shrinking */
   padding-top: 5.5rem;
   text-align: left;
+  gap: 5rem;
 }
 
 .container {
   width: 100%;
-  background-color: purple;
   box-sizing: border-box;
   padding: 1rem;
+  border-radius: 5px;
+}
+
+.container:hover {
+  background-color: rgba(125, 159, 152, 20%);
+  backdrop-filter: blur(20rem);
 }

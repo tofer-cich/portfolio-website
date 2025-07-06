@@ -11,6 +11,12 @@ function App() {
       description: 'Project 1 Description',
       techBubbles: ["React", "Node.js"],
     },
+    {
+      img: 'assets/react.svg',
+      title: 'Project 2',
+      description: 'Project 2 Description',
+      techBubbles: ["JavaScript", "Python"],
+    },
   ];
   
 

@@ -1,6 +1,6 @@
 function About() {
     return (
-        <>
+        <div id="about">
             <h2>About Me</h2>
             <p>
                 I'm a full-stack developer passionate about building clean, 
@@ -30,7 +30,7 @@ function About() {
                 and attention to detail to a team that values both 
                 innovation and craftsmanship.
             </p>
-        </>
+        </div>
     );
 }
 
