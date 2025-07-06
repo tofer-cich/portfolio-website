@@ -9,13 +9,21 @@ function App() {
     {
       img: react,
       title: 'Project 1',
-      description: 'Project 1 Description',
+      description: `
+        This is Project 1 where I demonstrated a wide variety of 
+        techniques that helped establish my learning for future 
+        projects and such.
+      `,
       techBubbles: ["React", "Node.js"],
     },
     {
       img: react,
       title: 'Project 2',
-      description: 'Project 2 Description',
+      description: `
+        This is Project 2 where I demonstrated a wide variety of 
+        techniques that helped establish my learning for future 
+        projects and such.
+      `,
       techBubbles: ["JavaScript", "Python"],
     },
   ];

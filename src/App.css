@@ -83,7 +83,7 @@ li:hover::before {
 
 #screen {
   display: flex;
-  width: 100%; /* Take full available width */
+  /* width: 100%;  */
   max-width: 1200px;
   min-width: 700px;
   box-sizing: border-box;
@@ -128,9 +128,35 @@ main {
   box-sizing: border-box;
   padding: 1rem;
   border-radius: 5px;
+  display: flex;
+  gap: 1rem;
 }
 
 .project-card:hover {
   background-color: rgba(125, 159, 152, 15%);
   backdrop-filter: blur(20rem);
+}
+
+.project-card:hover h3 {
+  color: var(--myBlue);
+}
+
+.project-card-info > h3,
+.project-card-info > p,
+.project-card-info > .tech-bubbles {
+  margin: 0;
+}
+
+.project-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.project-card-img {
+  padding-top: .4rem;
+}
+
+.project-card-img img {
+  width: 5rem;
 }
