@@ -58,6 +58,10 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  color: rgba(206, 236, 231, 90%);
+}
+
 ul {
   display: flex;
   flex-direction: column;
@@ -85,7 +89,7 @@ li:hover::before {
   min-width: 700px;
   box-sizing: border-box;
   margin: 0 auto; /* Center the container */
-  gap: 4rem;
+  gap: 10rem;
 }
 
 #sidebar {
@@ -94,7 +98,7 @@ li:hover::before {
     top: 0;
     border: 1px red solid;
     flex: 0 0 25rem; /* Fixed width, won't grow/shrink */
-    height: 90vh; 
+    height: 80vh; 
     padding-top: 5.5rem;
     justify-items: start;
     overflow-y: auto; /* Scroll if content is long */
@@ -109,5 +113,13 @@ main {
   border: 2px green solid;
   flex: 1; /* Takes remaining space */
   min-width: 0; /* Allows shrinking */
-  padding-top: 3rem;
+  padding-top: 5.5rem;
+  text-align: left;
+}
+
+.container {
+  width: 100%;
+  background-color: purple;
+  box-sizing: border-box;
+  padding: 1rem;
 }

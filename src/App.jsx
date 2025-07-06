@@ -1,6 +1,17 @@
-import './App.css'
+import './App.css';
+import About from './components/sections/About';
+import Projects from './components/sections/Projects';
 
 function App() {
+
+  const projects = [
+    {
+      img: './assets/react.svg',
+      title: 'Project 1',
+      description: 'Project 1 Description',
+      techBubbles: ["React", "Node.js"],
+    },
+  ];
   
 
   return (
@@ -16,39 +27,8 @@ function App() {
         </ul>
       </div>
       <main>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff In The Butt Stuffing Butts</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
-        <h1>Butt Stuff</h1>
+        <About />
+        <Projects projects={projects} />
       </main>
     </div>
   )
