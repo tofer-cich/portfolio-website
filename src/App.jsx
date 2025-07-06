@@ -1,18 +1,19 @@
 import './App.css';
 import About from './components/sections/About';
 import Projects from './components/sections/Projects';
+import react from './assets/react.svg';
 
 function App() {
 
   const projects = [
     {
-      img: './assets/react.svg',
+      img: react,
       title: 'Project 1',
       description: 'Project 1 Description',
       techBubbles: ["React", "Node.js"],
     },
     {
-      img: 'assets/react.svg',
+      img: react,
       title: 'Project 2',
       description: 'Project 2 Description',
       techBubbles: ["JavaScript", "Python"],
