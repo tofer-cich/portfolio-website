@@ -14,7 +14,7 @@ function App() {
         techniques that helped establish my learning for future 
         projects and such.
       `,
-      techBubbles: ["React", "Node.js"],
+      techBubbles: ["React", "Node.js", "HTML", "JavaScript", "CSS", "Express", "PostgresQL"],
     },
     {
       img: react,

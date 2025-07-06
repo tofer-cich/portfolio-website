@@ -160,3 +160,22 @@ main {
 .project-card-img img {
   width: 5rem;
 }
+
+.tech-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+}
+
+h3 {
+  line-height: 100%;
+}
+
+.tech-bubbles > span {
+  background-color: rgba(153, 63, 22, 50%);
+  color: var(--myOrange);
+  box-sizing: border-box;
+  padding: .2rem .6rem;
+  border-radius: 70px;
+  font-size: .9rem;
+}
