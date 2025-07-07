@@ -73,17 +73,21 @@ li {
   list-style-type: none;
 }
 
-li:hover {
+li img {
+  width: 2rem;
+  filter: invert(60%);
+}
+
+#sidebar-title li:hover {
   color: red;
 }
 
-li:hover::before {
+#sidebar-title li:hover::before {
   content: '---';
 }
 
 #screen {
   display: flex;
-  /* width: 100%;  */
   max-width: 1200px;
   min-width: 700px;
   box-sizing: border-box;
@@ -100,11 +104,25 @@ li:hover::before {
     padding-top: 5.5rem;
     justify-items: start;
     overflow-y: auto; /* Scroll if content is long */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+}
+
+#sidebar-title {
+  text-align: left;
 }
 
 #sidebar > p {
   width: 20rem;
+}
+
+#sidebar-contacts > ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 1rem;
 }
 
 main {
