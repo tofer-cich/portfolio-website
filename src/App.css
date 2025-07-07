@@ -43,6 +43,10 @@
   color: #888;
 }
 
+a {
+  color: rgba(206, 236, 231, 90%);
+}
+
 p {
   color: rgba(206, 236, 231, 90%);
   text-align: left;
@@ -79,32 +83,46 @@ li img {
 }
 
 .sections {
-  list-style-type: none;
-  padding-left: 0;
+  margin-top: 5rem;
   color: rgba(206, 236, 231, 90%);
 }
 
-.sections li {
+.link-container {
+  display: inline-block;
   position: relative;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease-out;
 }
 
-.sections li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 2.9rem;
-  height: 1px; /* Line thickness */
-  width: 20px;  /* Initial line length */
-  background: #333; /* Line color */
-  transform: translateY(-50%);
-  transition: width 0.3s ease-out; /* Line growth animation */
-  color: rgba(206, 236, 231, 90%);
+.link {
+  display: inline-block;
+  transition: transform .4s ease;
+  position: relative;
+  z-index: 1;
 }
 
-.sections li:hover::before {
-  width: 3rem;
+.link-container:hover .link{
+  transform: translateX(1rem);
+  color: var(--myBlue);
+}
+
+.link-container:hover line {
+  color: red;
+}
+
+line {
+  /* transform: scaleX(0);
+  transform-origin: left center; */
+  animation: grow 2s forwards;
+}
+
+@keyframes grow {
+  to {
+    /* transform: scaleX(1); */
+    x2: 20;
+  }
+}
+
+svg:hover line {
+  x2: 200;
 }
 
 #screen {

@@ -7,28 +7,31 @@ function Sidebar({ gitHub, linkedIn}) {
                 <p>I build scalable, full-stack applications&#8212;designed with precision and intent.</p>
                 <ul className="sections">
                     <li>
-                        <span className="svg-emdash">
-                            <svg className="emdash-line" viewBox="0 0 100 2" preserveAspectRatio="none">
-                                <line x1="0" y1='1' x2='0' y2='100' stroke='currentColor' strokeWidth='2' />
-                            </svg>
-                            About
-                        </span>
+                        <a href="#about">
+                            <div className="link-container">
+                                <div className="link">
+                                    About
+                                </div>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <span className="svg-emdash">
-                            <svg className="emdash-line" viewBox="0 0 100 2" preserveAspectRatio="none">
-                                <line x1="0" y1='1' x2='0' y2='100' stroke='currentColor' strokeWidth='2' />
-                            </svg>
-                            Projects
-                        </span>
+                        <a href="#projects">
+                            <div className="link-container">
+                                <div className="link">
+                                    Projects
+                                </div>
+                            </div>
+                        </a>
                     </li>
                     <li>
-                        <span className="svg-emdash">
-                            <svg className="emdash-line" viewBox="0 0 100 2" preserveAspectRatio="none">
-                                <line x1="0" y1='1' x2='0' y2='100' stroke='currentColor' strokeWidth='2' />
-                            </svg>
-                            Technologies
-                        </span>
+                        <a href="#technologies">
+                            <div className="link-container">
+                                <div className="link">
+                                    Technologies
+                                </div>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
