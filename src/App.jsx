@@ -15,6 +15,7 @@ import js from './assets/js.png';
 import postgre from './assets/postgre.png';
 import python from './assets/python.png';
 import node from './assets/programing.png';
+import Starfield from './components/FX/Starfield';
 
 function App() {
 
@@ -82,14 +83,17 @@ function App() {
   
 
   return (
-    <div id='screen'>
-      <Sidebar gitHub={gitHub} linkedIn={linkedIn}/>
-      <main>
-        <About />
-        <Projects projects={projects} />
-        <Technologies technologies={technologies} />
-      </main>
-    </div>
+    <>
+      <Starfield />
+      <div id='screen'>
+        <Sidebar gitHub={gitHub} linkedIn={linkedIn}/>
+        <main>
+          <About />
+          <Projects projects={projects} />
+          <Technologies technologies={technologies} />
+        </main>
+      </div>
+    </>
   )
 }
 

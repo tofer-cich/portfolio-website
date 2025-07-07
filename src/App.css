@@ -139,6 +139,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  z-index: 1;
 }
 
 .project-card {
@@ -229,3 +230,5 @@ h3 {
 .tech-badge span {
   line-height: 80%;
 }
+
+

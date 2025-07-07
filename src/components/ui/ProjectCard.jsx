@@ -7,7 +7,7 @@ function ProjectCard({ img, title, description, techBubbles }) {
             <div className="project-card-info">
                 <h3>{title}</h3>
                 <p>{description}</p>
-                <div class="tech-bubbles">
+                <div className="tech-bubbles">
                     {techBubbles.map((techBubble, index) => (
                         <span key={index} className="bubble">{techBubble}</span>
                     ))};
