@@ -67,9 +67,6 @@ h3 {
 }
 
 ul {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
   padding: 0;
 }
 
@@ -83,8 +80,12 @@ li img {
 }
 
 .sections {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   margin-top: 5rem;
   color: rgba(206, 236, 231, 90%);
+  gap: 1.2rem;
 }
 
 .link-container {
@@ -94,7 +95,7 @@ li img {
 
 .link {
   display: inline-block;
-  transition: transform .4s ease;
+  transition: transform .2s ease;
   position: relative;
   z-index: 1;
 }
@@ -106,23 +107,6 @@ li img {
 
 .link-container:hover line {
   color: red;
-}
-
-line {
-  /* transform: scaleX(0);
-  transform-origin: left center; */
-  animation: grow 2s forwards;
-}
-
-@keyframes grow {
-  to {
-    /* transform: scaleX(1); */
-    x2: 20;
-  }
-}
-
-svg:hover line {
-  x2: 200;
 }
 
 #screen {
