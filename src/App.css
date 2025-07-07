@@ -78,12 +78,33 @@ li img {
   filter: invert(60%);
 }
 
-#sidebar-title li:hover {
-  color: red;
+.sections {
+  list-style-type: none;
+  padding-left: 0;
+  color: rgba(206, 236, 231, 90%);
 }
 
-#sidebar-title li:hover::before {
-  content: '---';
+.sections li {
+  position: relative;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-out;
+}
+
+.sections li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2.9rem;
+  height: 1px; /* Line thickness */
+  width: 20px;  /* Initial line length */
+  background: #333; /* Line color */
+  transform: translateY(-50%);
+  transition: width 0.3s ease-out; /* Line growth animation */
+  color: rgba(206, 236, 231, 90%);
+}
+
+.sections li:hover::before {
+  width: 3rem;
 }
 
 #screen {
@@ -91,8 +112,9 @@ li img {
   max-width: 1200px;
   min-width: 700px;
   box-sizing: border-box;
-  margin: 0 auto; /* Center the container */
+  margin: 0 3rem;
   gap: 10rem;
+  
 }
 
 #sidebar {
@@ -103,7 +125,7 @@ li img {
     height: 80vh; 
     padding-top: 5.5rem;
     justify-items: start;
-    overflow-y: auto; /* Scroll if content is long */
+    overflow-y: hidden; /* Scroll if content is long */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -149,11 +171,16 @@ main {
   border-radius: 5px;
   display: flex;
   gap: 1rem;
+  transition: background-color .2s ease-out;
 }
 
 .project-card:hover {
   background-color: rgba(125, 159, 152, 15%);
   backdrop-filter: blur(20rem);
+}
+
+.project-card h3 {
+  transition: color .2s ease-out;
 }
 
 .project-card:hover h3 {
@@ -199,10 +226,6 @@ h3 {
   font-size: .9rem;
 }
 
-#technologies {
-  
-}
-
 .tech-badge {
   display: flex;
   flex-direction: column;
@@ -214,6 +237,7 @@ h3 {
   align-items: center;
   padding: .5rem 1.5rem;
   gap: .7rem;
+  width: 5.5rem;
 }
 
 .tech-badge > img {
@@ -230,5 +254,3 @@ h3 {
 .tech-badge span {
   line-height: 80%;
 }
-
-
