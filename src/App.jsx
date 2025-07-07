@@ -2,6 +2,8 @@ import './App.css';
 import About from './components/sections/About';
 import Projects from './components/sections/Projects';
 import Sidebar from './components/layout/Sidebar';
+import Technologies from './components/sections/Technologies';
+
 import react from './assets/react.svg';
 import gitHub from './assets/github.png';
 import linkedIn from './assets/linkedin.png';
@@ -38,6 +40,45 @@ function App() {
       techBubbles: ["JavaScript", "Python"],
     },
   ];
+
+  const technologies = [
+    {
+      name: 'HTML',
+      img: html,
+    },
+    {
+      name: 'CSS',
+      img: css,
+    },
+    {
+      name: 'JAVASCRIPT',
+      img: js,
+    },
+    {
+      name: 'REACT',
+      img: react,
+    },
+    {
+      name: 'GIT',
+      img: git,
+    },
+    {
+      name: 'NODE',
+      img: node,
+    },
+    {
+      name: 'POSTGRES',
+      img: postgre,
+    },
+    {
+      name: 'PYTHON',
+      img: python,
+    },
+    {
+      name: 'JAVA',
+      img: java,
+    },
+  ];
   
 
   return (
@@ -46,6 +87,7 @@ function App() {
       <main>
         <About />
         <Projects projects={projects} />
+        <Technologies technologies={technologies} />
       </main>
     </div>
   )

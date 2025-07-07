@@ -197,3 +197,35 @@ h3 {
   border-radius: 70px;
   font-size: .9rem;
 }
+
+#technologies {
+  
+}
+
+.tech-badge {
+  display: flex;
+  flex-direction: column;
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right top, var(--myOrange), var(--myBlue)) 1;
+  border-radius: 10px;
+  color: rgba(206, 236, 231, 90%);
+  align-items: center;
+  padding: .5rem 1.5rem;
+  gap: .7rem;
+}
+
+.tech-badge > img {
+  width: 5rem;
+}
+
+#tech-badge-section {
+  display: flex;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tech-badge span {
+  line-height: 80%;
+}
