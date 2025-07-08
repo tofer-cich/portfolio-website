@@ -44,11 +44,11 @@
 }
 
 a {
-  color: rgba(206, 236, 231, 90%);
+  color: rgba(189, 221, 216, 0.9);
 }
 
 p {
-  color: rgba(206, 236, 231, 90%);
+  color: rgba(189, 221, 216, 0.9);
   text-align: left;
 }
 
@@ -63,7 +63,7 @@ h2 {
 }
 
 h3 {
-  color: rgba(206, 236, 231, 90%);
+  color: rgba(189, 221, 216, 0.9);
 }
 
 ul {
@@ -84,7 +84,7 @@ li img {
   flex-direction: column;
   align-items: start;
   margin-top: 5rem;
-  color: rgba(206, 236, 231, 90%);
+  color: rgba(189, 221, 216, 0.9);
   gap: 1.2rem;
 }
 
@@ -235,7 +235,7 @@ h3 {
   border-style: solid;
   border-image: linear-gradient(to right top, var(--myOrange), var(--myBlue)) 1;
   border-radius: 10px;
-  color: rgba(206, 236, 231, 90%);
+  color: rgba(189, 221, 216, 0.9);
   align-items: center;
   padding: .5rem 1.5rem;
   gap: .7rem;
