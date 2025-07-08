@@ -9,6 +9,7 @@ function Projects({ projects }) {
                     title={project.title} 
                     description={project.description} 
                     techBubbles={project.techBubbles} 
+                    link={project.link}
                     key={index} 
                 />
             ))}

@@ -38,10 +38,14 @@ function Sidebar({ gitHub, linkedIn}) {
             <div id='sidebar-contacts'>
                 <ul>
                     <li>
-                        <img src={gitHub} alt='Github'></img>
+                        <a href="https://github.com/tofer-cich" target="_blank" rel="noopener noreferrer">
+                            <img src={gitHub} alt='Github'></img>
+                        </a>
                     </li>
                     <li>
-                        <img src={linkedIn} alt='LinkedIn'></img>
+                        <a href="https://www.linkedin.com/in/kristofercich/" target='_blank' rel="noopener noreferrer">
+                            <img src={linkedIn} alt='LinkedIn'></img>
+                        </a>
                     </li>
                 </ul>
             </div>

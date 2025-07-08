@@ -22,13 +22,13 @@ function App() {
   const projects = [
     {
       img: react,
-      title: 'Project 1',
+      title: 'Pokemon Memory Card Game',
       description: `
-        This is Project 1 where I demonstrated a wide variety of 
-        techniques that helped establish my learning for future 
-        projects and such.
+        Memory based card game created with the PokeAPI and react.
+        Don't click on the same card twice. 
       `,
-      techBubbles: ["React", "Node.js", "HTML", "JavaScript", "CSS", "Express", "PostgresQL"],
+      link: "https://memory-card-9qu.pages.dev/",
+      techBubbles: ["React", "HTML", "JavaScript", "CSS", "GIT"],
     },
     {
       img: react,

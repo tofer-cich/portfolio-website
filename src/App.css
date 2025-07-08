@@ -50,6 +50,7 @@ a {
 p {
   color: rgba(189, 221, 216, 0.9);
   text-align: left;
+  font-weight: 350;
 }
 
 h1 {
@@ -127,7 +128,7 @@ li img {
     height: 80vh; 
     padding-top: 5.5rem;
     justify-items: start;
-    overflow-y: hidden; /* Scroll if content is long */
+    /* overflow-y: hidden;  */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -147,6 +148,10 @@ li img {
   flex-direction: row;
   list-style-type: none;
   gap: 1rem;
+}
+
+#sidebar-contacts img:hover {
+  filter: brightness(100%) saturate(0) invert(100%);
 }
 
 main {

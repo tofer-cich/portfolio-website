@@ -1,28 +1,31 @@
 import { useEffect } from 'react';
 
 const Starfield = () => {
-  useEffect(() => {
-    const container = document.querySelector('.starfield');
-    if (!container) return;
-    console.log(container);
+  const stars = Array(40).fill(0).map((_, i) => ({
+    id: i,
+    left: `${Math.random() * 95}%`,
+    top: `${Math.random() * 95}%`,
+    size: `${Math.random() * 2}px`,
+    delay: `${Math.random() * 5}s`,
+  }));
 
-    // Clear previous stars (if any)
-    container.innerHTML = '';
-
-    // Generate stars
-    for (let i = 0; i < 80; i++) {
-      const star = document.createElement('div');
-      star.className = 'star';
-      star.style.left = `${Math.random() * 100}%`;
-      star.style.top = `${Math.random() * 100}%`;
-      star.style.width = `${Math.random() * 2}px`;
-      star.style.height = star.style.width;
-      star.style.animationDelay = `${Math.random() * 5}s`;
-      container.appendChild(star);
-    }
-  }, []);
-
-  return <div className="starfield" />;
+  return (
+    <div className="starfield">
+      {stars.map((star) => (
+        <div
+          key={star.id}
+          className="star"
+          style={{
+            left: star.left,
+            top: star.top,
+            width: star.size,
+            height: star.size,
+            animationDelay: star.delay,
+          }}
+        />
+      ))}
+    </div>
+  );
 };
 
 export default Starfield;
