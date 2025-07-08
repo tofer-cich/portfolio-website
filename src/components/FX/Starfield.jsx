@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
 const Starfield = () => {
-  const stars = Array(40).fill(0).map((_, i) => ({
+  const stars = Array(400).fill(0).map((_, i) => ({
     id: i,
-    left: `${Math.random() * 95}%`,
-    top: `${Math.random() * 95}%`,
+    left: `${Math.random() * 100}%`,
+    top: `${Math.random() * 100}%`,
     size: `${Math.random() * 2}px`,
     delay: `${Math.random() * 5}s`,
   }));

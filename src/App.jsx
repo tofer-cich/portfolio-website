@@ -16,19 +16,20 @@ import postgre from './assets/postgre.png';
 import python from './assets/python.png';
 import node from './assets/programing.png';
 import Starfield from './components/FX/Starfield';
+import memoryCard from './assets/memory-card.png';
 
 function App() {
 
   const projects = [
     {
-      img: react,
+      img: memoryCard,
       title: 'Pokemon Memory Card Game',
       description: `
         Memory based card game created with the PokeAPI and react.
         Don't click on the same card twice. 
       `,
       link: "https://memory-card-9qu.pages.dev/",
-      techBubbles: ["React", "HTML", "JavaScript", "CSS", "GIT"],
+      techBubbles: ["React", "HTML", "JavaScript", "CSS", "Git", 'PokeAPI'],
     },
     {
       img: react,

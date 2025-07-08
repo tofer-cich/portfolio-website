@@ -14,7 +14,7 @@
 }
 
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   scroll-padding-top: 5.5rem;
 }
 
@@ -83,8 +83,8 @@ button:focus-visible {
   position: fixed;
   top: 0;
   left: 0;
-  width: 95vw;
-  height: 95vh;
+  width: 100vw;
+  height: 100vh;
   z-index: 0;
   overflow: hidden;
   transform: translateZ(0);

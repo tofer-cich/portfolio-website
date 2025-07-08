@@ -211,7 +211,8 @@ main {
 }
 
 .project-card-img img {
-  width: 5rem;
+  height: 4.7rem;
+  width: 8rem;
 }
 
 .tech-bubbles {
@@ -245,6 +246,7 @@ h3 {
   padding: .5rem 1.5rem;
   gap: .7rem;
   width: 5.5rem;
+  justify-content: space-between;
 }
 
 .tech-badge > img {
