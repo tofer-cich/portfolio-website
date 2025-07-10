@@ -54,7 +54,7 @@ function App() {
         and use the cursor to paint what you desire.
       `,
       link: "https://tofer-cich.github.io/etch-a-sketch/",
-      techBubbles: ["JavaScript", "HTML", "CSS"]
+      techBubbles: ["JavaScript", "HTML", "CSS", "VSCode"]
     },
     {
       img: landingPageOdin,
@@ -64,7 +64,7 @@ function App() {
         basic HTML and CSS concepts.
       `,
       link: "https://tofer-cich.github.io/landing-page-odin/",
-      techBubbles: ["HTML", "CSS"]
+      techBubbles: ["HTML", "CSS", "VSCode"]
     },
   ];
 

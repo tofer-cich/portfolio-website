@@ -1,8 +1,13 @@
 import { useEffect } from 'react';
-// 255, 142, 89
+
+const isMobile = window.innerWidth <= 760;
+
+let starCount = !isMobile ? 350 : 50;
+
+console.log(starCount);
 
 const Starfield = () => {
-  const stars = Array(350).fill(0).map((_, i) => ({
+  const stars = Array(starCount).fill(0).map((_, i) => ({
     id: i,
     left: `${Math.random() * 100}%`,
     top: `${Math.random() * 100}%`,

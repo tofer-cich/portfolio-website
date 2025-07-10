@@ -117,21 +117,23 @@ li img {
   min-width: 700px;
   box-sizing: border-box;
   margin: 0 3rem;
-  gap: 10rem;
+  gap: 1rem;
 }
 
 #sidebar {
-  @media (min-width: 750px) {
+  @media (min-width: 1024px) {
     position: sticky;
     top: 0;
-    flex: 0 0 25rem; /* Fixed width, won't grow/shrink */
+    flex: 0 0 47%;
     height: 80vh; 
     padding-top: 5.5rem;
     justify-items: start;
-    /* overflow-y: hidden;  */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  };
+  @media (max-width: 749px) {
+    background-color: #25DAB5;
   }
 }
 
@@ -139,7 +141,7 @@ li img {
   text-align: left;
 }
 
-#sidebar > p {
+#sidebar p {
   width: 20rem;
 }
 
@@ -158,7 +160,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1; /* Takes remaining space */
-  min-width: 0; /* Allows shrinking */
+  min-width: 0px; /* Allows shrinking */
   padding-top: 5.5rem;
   text-align: left;
   gap: 5rem;
