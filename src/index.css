@@ -93,7 +93,8 @@ button:focus-visible {
 
 .star {
   position: absolute;
-  background: white;
+  /* background: red;
+  color: red; */
   border-radius: 50%;
   opacity: 0.8;
   animation: twinkle 5s infinite linear;
