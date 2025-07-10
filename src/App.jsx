@@ -20,6 +20,8 @@ import Starfield from './components/FX/Starfield';
 import memoryCard from './assets/memory-card.png';
 import express from './assets/Express.png';
 import calculator from './assets/Calculator.png';
+import etchASketch from './assets/Etch-a-sketch.png';
+import landingPageOdin from './assets/Landing-page-Odin.png';
 
 function App() {
 
@@ -43,6 +45,26 @@ function App() {
       `,
       link: "https://tofer-cich.github.io/calculator/",
       techBubbles: ["JavaScript", "HTML","CSS", "Git", "VSCode"],
+    },
+    {
+      img: etchASketch,
+      title: 'Etch-a-Sketch',
+      description: `
+        An etch-a-sketch styled drawing site. Select a grid size 
+        and use the cursor to paint what you desire.
+      `,
+      link: "https://tofer-cich.github.io/etch-a-sketch/",
+      techBubbles: ["JavaScript", "HTML", "CSS"]
+    },
+    {
+      img: landingPageOdin,
+      title: 'Landing Page',
+      description: `
+        A mock landing page to help understand design and 
+        basic HTML and CSS concepts.
+      `,
+      link: "https://tofer-cich.github.io/landing-page-odin/",
+      techBubbles: ["HTML", "CSS"]
     },
   ];
 
