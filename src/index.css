@@ -87,19 +87,16 @@ button:focus-visible {
   height: 100vh;
   z-index: 0;
   overflow: hidden;
-  transform: translateZ(0);
-  backface-visibility: hidden;
 }
 
 .star {
   position: absolute;
-  border-radius: 50%;
   opacity: 0;
-  animation: twinkle 5s infinite linear;
+  animation: twinkle 3s infinite ease;
   will-change: opacity;
 }
 
 @keyframes twinkle {
-  0%, 100% { opacity: 0.1; }
-  50% { opacity: 0.6; }
+  0%, 100% { opacity: 0.05; }
+  50% { opacity: 0.4; }
 }

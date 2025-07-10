@@ -2,7 +2,7 @@ import ProjectCard from "../ui/ProjectCard";
 
 function Projects({ projects }) {
     return (
-        <div id="projects">
+        <div id="projects" className="main-section">
             <h2>Projects</h2>
             {projects.map((project, index) => (
                 <ProjectCard img={project.img} 

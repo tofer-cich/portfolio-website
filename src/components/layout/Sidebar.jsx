@@ -8,7 +8,7 @@ function Sidebar({ gitHub, linkedIn}) {
                 <ul className="sections">
                     <li>
                         <a href="#about">
-                            <div className="link-container">
+                            <div className="link-container" data-target="about">
                                 <div className="link">
                                     About
                                 </div>
@@ -17,7 +17,7 @@ function Sidebar({ gitHub, linkedIn}) {
                     </li>
                     <li>
                         <a href="#projects">
-                            <div className="link-container">
+                            <div className="link-container" data-target="projects">
                                 <div className="link">
                                     Projects
                                 </div>
@@ -26,7 +26,7 @@ function Sidebar({ gitHub, linkedIn}) {
                     </li>
                     <li>
                         <a href="#technologies">
-                            <div className="link-container">
+                            <div className="link-container" data-target="technologies">
                                 <div className="link">
                                     Technologies
                                 </div>

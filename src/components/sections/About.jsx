@@ -1,7 +1,7 @@
 function About() {
     return (
-        <div id="about">
-            <h2>About Me</h2>
+        <div id="about" className="main-section">
+                <h2>About Me</h2>
             <p>
                 I'm a full-stack developer that's passionate about building clean, 
                 efficient applications that solve real problems. 

@@ -1,10 +1,8 @@
 import { useEffect } from 'react';
 
-const isMobile = window.innerWidth <= 760;
+const size = window.innerWidth;
 
-let starCount = !isMobile ? 350 : 50;
-
-console.log(starCount);
+let starCount = Math.floor(size / 6);
 
 const Starfield = () => {
   const stars = Array(starCount).fill(0).map((_, i) => ({
@@ -13,6 +11,7 @@ const Starfield = () => {
     top: `${Math.random() * 100}%`,
     size: `${Math.random() * 3}px`,
     delay: `${Math.random() * 5}s`,
+    duration: `${Math.random() * 5 + 7}s`,
     color: `rgb(255, ${Math.random() * 10 + 245}, ${Math.random() * 255})`,
   }));
 
@@ -29,6 +28,7 @@ const Starfield = () => {
             height: star.size,
             animationDelay: star.delay,
             background: star.color,
+            animationDuration: star.duration,
           }}
         />
       ))}

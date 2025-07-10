@@ -1,4 +1,7 @@
 import './App.css';
+
+import { useRef, useEffect } from 'react';
+
 import About from './components/sections/About';
 import Projects from './components/sections/Projects';
 import Sidebar from './components/layout/Sidebar';
@@ -110,6 +113,45 @@ function App() {
       img: express,
     },
   ];
+
+  const headerLinksRef = useRef([]);
+  const sectionsRef = useRef([]);
+
+  useEffect(() => {
+    if (window.innerWidth < 1024) return;
+    // Populate refs after DOM render
+    headerLinksRef.current = Array.from(document.querySelectorAll('.link-container'));
+    sectionsRef.current = Array.from(document.querySelectorAll('.main-section'));
+
+    console.log("sections:", sectionsRef.current);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          console.log("entry:", entry);
+          if (entry.isIntersecting) {
+            const visibleSectionId = entry.target.id;
+            console.log("visibleSectionId:", visibleSectionId);
+            headerLinksRef.current.forEach((link) => {
+              link.classList.toggle(
+                'active-link',
+                link.dataset.target === visibleSectionId
+              );
+            });
+          }
+        });
+      },
+      { threshold: 0.5, rootMargin: '0px 0px -50% 0px' }
+    );
+
+    sectionsRef.current.forEach((section) => observer.observe(section));
+
+    return () => {
+      // Cleanup observers on unmount
+      sectionsRef.current.forEach((section) => observer.unobserve(section));
+    };
+  }, []); // Empty dependency array = runs once
+
   
 
   return (

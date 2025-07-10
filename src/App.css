@@ -87,6 +87,9 @@ li img {
   margin-top: 5rem;
   color: rgba(189, 221, 216, 0.9);
   gap: 1.2rem;
+  @media (max-width: 1023px) {
+    display: none;
+  }
 }
 
 .link-container {
@@ -107,17 +110,21 @@ li img {
   color: var(--myBlue);
 }
 
-.link-container:hover line {
-  color: red;
+.link-container.active-link .link {
+  color: var(--myBlue);
+  transform: translateX(1rem);
 }
 
 #screen {
   display: flex;
   max-width: 1200px;
-  min-width: 700px;
   box-sizing: border-box;
   margin: 0 3rem;
   gap: 1rem;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    margin: 0 1rem;
+  }
 }
 
 #sidebar {
@@ -132,8 +139,9 @@ li img {
     flex-direction: column;
     justify-content: space-between;
   };
-  @media (max-width: 749px) {
-    background-color: #25DAB5;
+  @media (max-width: 1023px) {
+    /* background-color: #25DAB5; */
+    margin-top: 5.5rem;
   }
 }
 
@@ -150,6 +158,7 @@ li img {
   flex-direction: row;
   list-style-type: none;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 #sidebar-contacts img:hover {
@@ -165,6 +174,15 @@ main {
   text-align: left;
   gap: 5rem;
   z-index: 1;
+}
+
+main h2 {
+  @media (max-width:1023px) {
+    position: sticky;
+    top: 0;
+    padding-top: .5rem;
+    background-color: rgba(20, 20, 20, .9);
+  }
 }
 
 #projects {

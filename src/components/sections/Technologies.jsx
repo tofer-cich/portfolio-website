@@ -2,7 +2,7 @@ import TechBadge from '../ui/TechBadge';
 
 function Technologies({ technologies }) {
     return (
-        <div id='technologies'>
+        <div id='technologies' className='main-section'>
             <h2>Technologies</h2>
             <div id='tech-badge-section'>
                 {technologies.map((tech, index) => (
