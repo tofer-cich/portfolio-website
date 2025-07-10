@@ -118,7 +118,6 @@ li img {
   box-sizing: border-box;
   margin: 0 3rem;
   gap: 10rem;
-  
 }
 
 #sidebar {
@@ -163,6 +162,7 @@ main {
   padding-top: 5.5rem;
   text-align: left;
   gap: 5rem;
+  z-index: 1;
 }
 
 #projects {
@@ -263,4 +263,15 @@ h3 {
 
 .tech-badge span {
   line-height: 80%;
+}
+
+#attributions {
+  color: rgba(189, 221, 216, 0.9);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+#attributions a {
+  text-decoration: underline;
 }

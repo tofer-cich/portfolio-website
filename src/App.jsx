@@ -3,6 +3,7 @@ import About from './components/sections/About';
 import Projects from './components/sections/Projects';
 import Sidebar from './components/layout/Sidebar';
 import Technologies from './components/sections/Technologies';
+import Attributions from './components/sections/Attributions';
 
 import react from './assets/react.svg';
 import gitHub from './assets/github.png';
@@ -18,6 +19,7 @@ import node from './assets/programing.png';
 import Starfield from './components/FX/Starfield';
 import memoryCard from './assets/memory-card.png';
 import express from './assets/Express.png';
+import calculator from './assets/Calculator.png';
 
 function App() {
 
@@ -33,12 +35,11 @@ function App() {
       techBubbles: ["React", "HTML", "JavaScript", "CSS", "Git", 'PokeAPI', "VSCode"],
     },
     {
-      img: react,
+      img: calculator,
       title: 'Calculator',
       description: `
-        This is Project 2 where I demonstrated a wide variety of 
-        techniques that helped establish my learning for future 
-        projects and such.
+        An implementation of a calculator with functionalities for 
+        addition, subtraction, division, and multiplication.
       `,
       link: "https://tofer-cich.github.io/calculator/",
       techBubbles: ["JavaScript", "HTML","CSS", "Git", "VSCode"],
@@ -98,6 +99,7 @@ function App() {
           <About />
           <Projects projects={projects} />
           <Technologies technologies={technologies} />
+          <Attributions />
         </main>
       </div>
     </>
