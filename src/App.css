@@ -95,6 +95,7 @@ li img {
 }
 
 .link {
+  font-size: 1.3rem;
   display: inline-block;
   transition: transform .2s ease;
   position: relative;

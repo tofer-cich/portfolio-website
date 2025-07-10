@@ -17,6 +17,7 @@ import python from './assets/python.png';
 import node from './assets/programing.png';
 import Starfield from './components/FX/Starfield';
 import memoryCard from './assets/memory-card.png';
+import express from './assets/Express.png';
 
 function App() {
 
@@ -29,17 +30,18 @@ function App() {
         Don't click on the same card twice. 
       `,
       link: "https://memory-card-9qu.pages.dev/",
-      techBubbles: ["React", "HTML", "JavaScript", "CSS", "Git", 'PokeAPI'],
+      techBubbles: ["React", "HTML", "JavaScript", "CSS", "Git", 'PokeAPI', "VSCode"],
     },
     {
       img: react,
-      title: 'Project 2',
+      title: 'Calculator',
       description: `
         This is Project 2 where I demonstrated a wide variety of 
         techniques that helped establish my learning for future 
         projects and such.
       `,
-      techBubbles: ["JavaScript", "Python"],
+      link: "https://tofer-cich.github.io/calculator/",
+      techBubbles: ["JavaScript", "HTML","CSS", "Git", "VSCode"],
     },
   ];
 
@@ -79,6 +81,10 @@ function App() {
     {
       name: 'JAVA',
       img: java,
+    },
+    {
+      name: 'Express',
+      img: express,
     },
   ];
   

@@ -93,15 +93,13 @@ button:focus-visible {
 
 .star {
   position: absolute;
-  /* background: red;
-  color: red; */
   border-radius: 50%;
-  opacity: 0.8;
+  opacity: 0;
   animation: twinkle 5s infinite linear;
   will-change: opacity;
 }
 
 @keyframes twinkle {
-  0%, 100% { opacity: 0.2; }
-  50% { opacity: 0.8; }
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.6; }
 }

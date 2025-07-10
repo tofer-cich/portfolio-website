@@ -6,6 +6,7 @@ Welcome to my portfolio! This is where I'll keep my professional history and all
 - Pixel Perfect FlatIcon
 - Freepik FlatIcon
 - pocike FlatIcon
+- Link to icons8
 
 ## Starfield Throttling
 
