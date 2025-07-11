@@ -202,17 +202,19 @@ main h2 {
   transition: background-color .2s ease-out;
 }
 
-.project-card:hover {
-  background-color: rgba(125, 159, 152, 15%);
-  backdrop-filter: blur(20rem);
+@media (min-width: 1024px) {
+  .project-card:hover {
+    background-color: rgba(125, 159, 152, 15%);
+    backdrop-filter: blur(20rem);
+  }
+
+  .project-card:hover h3 {
+    color: var(--myBlue);
+  }
 }
 
 .project-card h3 {
   transition: color .2s ease-out;
-}
-
-.project-card:hover h3 {
-  color: var(--myBlue);
 }
 
 .project-card-info > h3,
