@@ -36,7 +36,7 @@ function App() {
         Memory based card game created with the PokeAPI and react.
         Don't click on the same card twice. 
       `,
-      link: "https://memory-card-9qu.pages.dev/",
+      link: "https://59bd421c.memory-card-9qu.pages.dev/",
       techBubbles: ["React", "HTML", "JavaScript", "CSS", "Git", 'PokeAPI', "VSCode"],
     },
     {
