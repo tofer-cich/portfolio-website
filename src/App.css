@@ -292,6 +292,7 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+  font-size: .85rem;
 }
 
 #attributions a {
