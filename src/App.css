@@ -244,6 +244,12 @@ main h2 {
   gap: .6rem;
 }
 
+@media (max-width: 767px) {
+  .tech-bubbles {
+    font-size: .9rem;
+  }
+}
+
 h3 {
   line-height: 100%;
 }

@@ -13,7 +13,7 @@ function About() {
                 in front end and back end technologies through hands-on projects 
                 and continuous learning. I'm particularly drawn to creating 
                 thoughtful user experiences through robust engineering and 
-                accesible UIs.
+                accessible UIs.
             </p>
             <p>
                 Outside of development, I'm a lifelong music enthusiast. 
