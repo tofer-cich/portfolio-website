@@ -244,6 +244,23 @@ main h2 {
   gap: .6rem;
 }
 
+@media (max-width: 767px) {
+  .tech-bubbles > span {
+    font-size: .7rem;
+  }
+
+  .project-card-info > h3,
+  p, span {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .tech-bubbles {
+    font-size: .9rem;
+  }
+}
+
 h3 {
   line-height: 100%;
 }
@@ -254,7 +271,6 @@ h3 {
   box-sizing: border-box;
   padding: .2rem .6rem;
   border-radius: 70px;
-  font-size: .9rem;
 }
 
 .tech-badge {
