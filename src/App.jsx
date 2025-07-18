@@ -123,15 +123,15 @@ function App() {
     headerLinksRef.current = Array.from(document.querySelectorAll('.link-container'));
     sectionsRef.current = Array.from(document.querySelectorAll('.main-section'));
 
-    console.log("sections:", sectionsRef.current);
+    // console.log("sections:", sectionsRef.current);
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          console.log("entry:", entry);
+          // console.log("entry:", entry);
           if (entry.isIntersecting) {
             const visibleSectionId = entry.target.id;
-            console.log("visibleSectionId:", visibleSectionId);
+            // console.log("visibleSectionId:", visibleSectionId);
             headerLinksRef.current.forEach((link) => {
               link.classList.toggle(
                 'active-link',
@@ -141,7 +141,7 @@ function App() {
           }
         });
       },
-      { threshold: 0.6, rootMargin: '0px 0px -25% 0px' }
+      { threshold: 0.0, rootMargin: '-12% 0px -78%' }
     );
 
     sectionsRef.current.forEach((section) => observer.observe(section));
