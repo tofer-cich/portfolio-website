@@ -109,7 +109,7 @@ function App() {
       img: java,
     },
     {
-      name: 'Express',
+      name: 'EXPRESS',
       img: express,
     },
   ];
