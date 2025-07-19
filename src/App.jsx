@@ -25,6 +25,7 @@ import express from './assets/Express.png';
 import calculator from './assets/Calculator.png';
 import etchASketch from './assets/Etch-a-sketch.png';
 import landingPageOdin from './assets/Landing-page-Odin.png';
+import spring from './assets/spring-boot.png';
 
 function App() {
 
@@ -111,6 +112,10 @@ function App() {
     {
       name: 'EXPRESS',
       img: express,
+    },
+    {
+      name: 'SPRINGBOOT',
+      img: spring,
     },
   ];
 
