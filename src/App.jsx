@@ -26,6 +26,7 @@ import calculator from './assets/Calculator.png';
 import etchASketch from './assets/Etch-a-sketch.png';
 import landingPageOdin from './assets/Landing-page-Odin.png';
 import spring from './assets/spring-boot.png';
+import frankieForest from './assets/frankieForest.png';
 
 function App() {
 
@@ -69,6 +70,17 @@ function App() {
       `,
       link: "https://tofer-cich.github.io/landing-page-odin/",
       techBubbles: ["HTML", "CSS", "VSCode"]
+    },
+    {
+      img: frankieForest,
+      title: "Frankie and the Forest",
+      description: `
+        A choose your own adventure game made with twine. 
+        Play as Frankie as he searches for his distraught 
+        sister, Rosie.
+      `,
+      link: "https://tofercich.wixsite.com/toferc-twine",
+      techBubbles: ["Twine", "JavaScript", "TwineScript"]
     },
   ];
 
