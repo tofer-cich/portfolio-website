@@ -1,8 +1,8 @@
-import memoryCard from '../assets/memory-card.png';
-import calculator from '../assets/Calculator.png';
-import etchASketch from '../assets/Etch-a-sketch.png';
-import landingPageOdin from '../assets/Landing-page-Odin.png';
-import frankieForest from '../assets/frankieForest.png';
+import memoryCard from '../../assets/memory-card.png';
+import calculator from '../../assets/Calculator.png';
+import etchASketch from '../../assets/Etch-a-sketch.png';
+import landingPageOdin from '../../assets/Landing-page-Odin.png';
+import frankieForest from '../../assets/frankieForest.png';
 
 const projects = [
     {

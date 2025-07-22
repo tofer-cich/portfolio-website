@@ -7,71 +7,15 @@ import Projects from './components/sections/Projects';
 import Sidebar from './components/layout/Sidebar';
 import Technologies from './components/sections/Technologies';
 import Attributions from './components/sections/Attributions';
-import projects from './components/ProjectRepository';
+import projects from './components/data/ProjectRepository';
+import technologies from './components/data/TechBadgeRepository';
 
-import react from './assets/react.svg';
+import Starfield from './components/FX/Starfield';
 import gitHub from './assets/github.png';
 import linkedIn from './assets/linkedin.png';
-import css from './assets/css-3.png';
-import git from './assets/git.png';
-import html from './assets/html.png';
-import java from './assets/java.png';
-import js from './assets/js.png';
-import postgre from './assets/postgre.png';
-import python from './assets/python.png';
-import node from './assets/programing.png';
-import Starfield from './components/FX/Starfield';
-import express from './assets/Express.png';
-import spring from './assets/spring-boot.png';
+
 
 function App() {
-
-  const technologies = [
-    {
-      name: 'HTML',
-      img: html,
-    },
-    {
-      name: 'CSS',
-      img: css,
-    },
-    {
-      name: 'JAVASCRIPT',
-      img: js,
-    },
-    {
-      name: 'REACT',
-      img: react,
-    },
-    {
-      name: 'GIT',
-      img: git,
-    },
-    {
-      name: 'NODE',
-      img: node,
-    },
-    {
-      name: 'POSTGRES',
-      img: postgre,
-    },
-    {
-      name: 'PYTHON',
-      img: python,
-    },
-    {
-      name: 'JAVA',
-      img: java,
-    },
-    {
-      name: 'EXPRESS',
-      img: express,
-    },
-    {
-      name: 'SPRINGBOOT',
-      img: spring,
-    },
-  ];
 
   const headerLinksRef = useRef([]);
   const sectionsRef = useRef([]);
